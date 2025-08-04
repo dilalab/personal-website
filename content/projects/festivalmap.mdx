@@ -1,0 +1,91 @@
+---
+title: Mobile Festival Map
+description: Spatiotemporal navigation in mobile event maps
+date: "2025"
+url: https://unkey.dev
+published: true
+image: "/images/festmap-ekran.png"
+repository: dilalab/festival-map
+---
+
+The project explores temporal navigation in mobile event maps by combining spatial and temporal dimensions in a single interface. Two integrated-view prototype versions were designed and tested. The findings offer insights into how users interact with time-based event data on mobile maps and highlight design strategies for improving spatiotemporal navigation for mobile event maps. The study was conducted as part of my MSc thesis at the University of Twente (ITC Faculty).
+![Festival Map](/images/festival-map.jpg)
+
+##### Commonalities of the Prototypes
+- Integrated spatial and temporal information in a single interface
+- Designed using a responsive web layout for mobile use
+- Included:
+  - A **simple festival map** aligned with official Glastonbury branding
+  - A **search button** for locating artists or stages
+  - A **live location icon** to simulate user presence on the map
+  - A **remaining time icon** showing the percentage of a performance still in progress
+![Commonalities](/images/festivalmap_commonalities.jpg)
+- Used **15-minute intervals** for flexible time navigation
+- Implemented time navigation with **sliders** of different orientation
+- Developed with **HTML, CSS, JavaScript**, and the **Solid** framework
+- Used **Mapbox GL JS** for map rendering; maps designed in **Mapbox Studio**, **QGIS**, and **ArcGIS**
+
+#### User Testing Themes
+
+##### Comparison of Prototype Versions (V1 vs. V2)
+
+- **Overall Preference**:  
+  - 8 out of 10 experts preferred **Version 2**.
+  - Average rating: **V1 ~7.3–7.5/10**, **V2 ~7.95–8/10**.
+
+- **Strengths of Version 2**:
+  - Easier time selection using the **vertical slider**, which utilizes the phone’s longer dimension.
+  - Clearer separation of **day and time navigation**.
+  - **Day buttons** showed selected day more clearly.
+
+- **Strengths of Version 1**:
+  - **Horizontal slider** at the bottom was intuitive for time browsing (left-to-right flow, thumb-accessible).
+  - Compact **combined time management** favored quick, spontaneous use.
+  - Clean, professional design appreciated.
+---
+
+![User Testing](/images/usertestthemes.png)
+
+##### Comparison: Prototypes vs. Separate Map and Schedule
+
+- **Preference**:  
+  - All participants preferred **integrated prototypes** over the separate festival map and schedule (PDF + map).
+
+- **Main Advantages of Integrated Prototypes**:
+  - Faster and easier decision-making with **all info in one place**.
+  - Clear **spatial overview** of performances and distances.
+  - **Visual display of remaining time** was well-received.
+  - Reduced need to memorize or switch between tools.
+
+- **Additional Notes**:
+  - Users appreciated the ability to quickly **explore performances live** without needing prior planning.
+  - Some participants still valued **occasional access to the full schedule**, especially for stage-based planning.
+---
+
+![Prototype vs Sep View](/images/prototypevssep.png)
+
+----
+
+##### Guerrilla Usability Testing Summary
+
+- 9 out of 10 participants preferred **Version 2** for easier time adjustment and clearer interaction.
+- Users valued **real-time map updates** while adjusting time.
+- Opinions on separate vs. combined time controls were mixed.
+- Physical issues (e.g. shaky hands, finger moisture) affected slider use.
+- Some users misunderstood the **remaining time icon**, suggesting need for clearer design.
+- Guerrilla testing revealed **new usability insights** beyond expert feedback.
+
+----
+
+##### Key Findings
+
+- **Integrated time + map interface** was clearly preferred over separate views for usability and decision-making.
+- **Vertical sliders** allowed precise time selection; **horizontal sliders** were more intuitive and thumb-friendly.
+- **Buttons** were preferred for day selection and accessibility; combining buttons with sliders improved precision.
+- **No clear preference** emerged between **combined vs. separate** time dimensions—depends on context and design.
+- **Remaining time symbology** was appreciated but sometimes misunderstood, suggesting need for clearer visuals.
+
+
+
+
+

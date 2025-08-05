@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/website-dilara.png",
   },
 };
 const inter = Inter({

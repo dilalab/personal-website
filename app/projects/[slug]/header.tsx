@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Github, Instagram } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -18,13 +18,13 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 	const [isIntersecting, setIntersecting] = useState(true);
 
 	const links: { label: string; href: string }[] = [];
-	if (project.repository) {
+	if (project.repository?.trim()) {
 		links.push({
 			label: "GitHub",
 			href: `https://github.com/${project.repository}`,
 		});
 	}
-	if (project.url) {
+	if (project.url?.trim()) {
 		links.push({
 			label: "Website",
 			href: project.url,
@@ -54,21 +54,8 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 			>
 				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
 					<div className="flex justify-between gap-8">
-						<span
-							title="View counter for this page"
-							className={`duration-200 hover:font-medium flex items-center gap-1 ${
-								isIntersecting
-									? " text-zinc-400 hover:text-zinc-100"
-									: "text-zinc-600 hover:text-zinc-900"
-							} `}
-						>
-							<Eye className="w-5 h-5" />{" "}
-							{Intl.NumberFormat("en-US", { notation: "compact" }).format(
-								views,
-							)}
-						</span>
-						<Link target="_blank" href="https://twitter.com/chronark_">
-							<Twitter
+						{/* <Link target="_blank" href="https://instagram.com/bibleblackk">
+							<Instagram
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
 										? " text-zinc-400 hover:text-zinc-100"
@@ -76,7 +63,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								} `}
 							/>
 						</Link>
-						<Link target="_blank" href="https://github.com/chronark">
+						<Link target="_blank" href="https://github.com/dilalab">
 							<Github
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
@@ -84,7 +71,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 										: "text-zinc-600 hover:text-zinc-900"
 								} `}
 							/>
-						</Link>
+						</Link> */}
 					</div>
 
 					<Link

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Image from "next/image"
 
 const navigation = [
   { name: "About", href: "/about" },
